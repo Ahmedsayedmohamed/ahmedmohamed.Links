@@ -1,0 +1,208 @@
+/* ############/ Google Fonts links /############ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@500;600;700&display=swap");
+/* ############/ Roots & Global Rules /############ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: px;
+}
+/* body{
+  font-family: ;
+  color:;
+} */
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* 
+:root {
+  --main-color:;
+  
+} */
+
+.ff-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.ff-mon {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.w-4 {
+  width: 4%;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.max-width {
+  max-width: 700px;
+}
+/* =================/ start landing /================= */
+
+header {
+  background: linear-gradient(to bottom, #2b4963, #203749, #101c25);
+  color: #fff;
+}
+
+header .pic img {
+  border: 2px solid #95e1ff;
+}
+
+header .links a svg {
+  color: #95e1ff;
+  transition: all 0.3s;
+}
+
+header .links a:hover svg {
+  transform: translateY(-5px) scale(1.1);
+  color: rgb(5, 127, 131);
+}
+
+header .cv {
+  color: #eff0ec;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid #eff0ec;
+  display: flex;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+  overflow: hidden;
+}
+
+header .cv:hover {
+  background-color: transparent;
+  border: 1px solid #eff0ec;
+  color: #29455e;
+}
+
+header .cv .download:hover {
+  animation: up-down 1s infinite;
+  color: #24a9dd;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+.cv::before,
+.cv::after {
+  content: "";
+  background-color: #eff0ec;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.cv::before {
+  z-index: -1;
+  left: -30px;
+}
+
+.cv::after {
+  z-index: -1;
+  right: -30px;
+}
+
+.cv:hover:before {
+  animation: left-move 1s forwards;
+}
+
+.cv:hover:after {
+  animation: right-move 1s forwards;
+}
+
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ############/ Start Media Query /############ */
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+  header .pic img {
+    width: 40% !important;
+  }
+
+  header .logo {
+    width: 6% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .pic img {
+    width: 60% !important;
+  }
+
+  header .logo {
+    width: 9% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
