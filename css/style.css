@@ -9,16 +9,11 @@ html {
   font-family: ;
   color:;
 } */
+
 a {
   text-decoration: none !important;
   color: inherit;
 }
-
-/* 
-:root {
-  --main-color:;
-  
-} */
 
 .ff-inter {
   font-family: "Inter", sans-serif;
@@ -60,35 +55,35 @@ a {
   font-weight: 900;
 }
 
+.p-10 {
+  padding-right: 7%;
+}
+
 .max-width {
   max-width: 700px;
 }
 /* =================/ start landing /================= */
 
 header {
-  background: linear-gradient(to bottom, #2b4963, #203749, #101c25);
-  color: #fff;
-}
-
-header .pic img {
-  border: 2px solid #95e1ff;
+  background: #e0e0e0;
+  color: #000;
 }
 
 header .links a svg {
-  color: #95e1ff;
+  color: #000;
   transition: all 0.3s;
 }
 
 header .links a:hover svg {
   transform: translateY(-5px) scale(1.1);
-  color: rgb(5, 127, 131);
+  color: #466143;
 }
 
 header .cv {
-  color: #eff0ec;
+  color: #000;
   transition: all 0.5s;
   cursor: pointer;
-  border: 1px solid #eff0ec;
+  border: 1px solid #466143;
   display: flex;
   position: relative;
   transition: all 0.5s;
@@ -97,14 +92,17 @@ header .cv {
 }
 
 header .cv:hover {
-  background-color: transparent;
-  border: 1px solid #eff0ec;
-  color: #29455e;
+  background-color: 466143;
+  color: #fff;
+  border: 1px solid transparent;
 }
 
-header .cv .download:hover {
+header .links-pdf svg:hover {
+  color: #000;
+}
+
+header .links-pdf .download:hover svg {
   animation: up-down 1s infinite;
-  color: #24a9dd;
 }
 
 @keyframes up-down {
@@ -120,7 +118,7 @@ header .cv .download:hover {
 .cv::before,
 .cv::after {
   content: "";
-  background-color: #eff0ec;
+  background-color: #466143;
   width: 12px;
   height: 12px;
   position: absolute;
@@ -177,12 +175,28 @@ header .cv .download:hover {
   }
 }
 
+header .lastestProject {
+  background-color: #466143;
+  color: #fff;
+}
+
+header .lastestProject .pic {
+  background-color: #e0e0e0;
+}
+
+header .lastestProject a:hover {
+  color: #000;
+}
+
 /* ############/ Start Media Query /############ */
 @media screen and (min-width: 1400px) {
+  header .profilePic {
+    width: 15% !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  header .pic img {
+  header .profilePic {
     width: 40% !important;
   }
 
@@ -192,8 +206,8 @@ header .cv .download:hover {
 }
 
 @media screen and (max-width: 992px) {
-  header .pic img {
-    width: 60% !important;
+  header .profilePic {
+    width: 40% !important;
   }
 
   header .logo {
