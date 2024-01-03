@@ -189,7 +189,7 @@ header .lastestProject .pic img{
 }
 
 @keyframes beat {
-    0%, 50%, 100% { transform: scale(2, 2); }
+    0%, 50%, 100% { transform: scale(1.5, 1.5); }
   30%, 80% { transform: scale(1.4, 1.4); }
 }
 
