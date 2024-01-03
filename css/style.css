@@ -184,6 +184,15 @@ header .lastestProject a:hover {
   color: #000;
 }
 
+header .lastestProject .pic img{
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
+}
+
 /* ############/ Start Media Query /############ */
 @media screen and (min-width: 1400px) {
   header .profilePic {
