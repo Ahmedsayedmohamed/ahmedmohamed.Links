@@ -199,6 +199,12 @@ header .lastestProject .pic img {
   }
 }
 
+
+.myProject .leftBorder {
+  border-right: 3px solid #2c2a74;
+}
+
+
 .myProject .tittle {
   position: relative;
 }
