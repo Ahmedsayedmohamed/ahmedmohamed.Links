@@ -246,6 +246,14 @@ header .lastestProject .pic img {
   header .profilePic {
     width: 25% !important;
   }
+  .myProject .tittle h5::after,
+  .myProject .tittle h5::before {
+    right: 15%;
+    width: 20%;
+  }
+  .myProject .tittle h5::before {
+    left: 15%;
+  }
 
   .logo {
     width: 9% !important;
