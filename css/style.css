@@ -220,10 +220,109 @@ header .lastestProject .pic img {
 
 .myProject .card {
   transition: all 0.5s;
+  border-color: #00000094;
 }
 
-.myProject .card:hover {
-  transform: scale(1.1);
+/* card */
+.myProject .ch1 {
+  transition: all 0.5s;
+}
+
+.myProject .ch1:hover {
+  transform: translateX(-2%) rotate(5deg);
+}
+
+.myProject .ch1:hover ~ .ch2 {
+  transform: translateX(-40%);
+}
+/* card */
+
+.myProject .ch2 {
+  transform: translateX(-60%);
+  transition: all 0.5s;
+}
+
+.myProject .ch2:hover {
+  transform: translateX(-90%) rotate(5deg);
+}
+
+.myProject .ch2:hover ~ .ch3 {
+  transform: translateX(-100%);
+}
+
+/* card */
+
+.myProject .ch3 {
+  transform: translateX(-120%);
+  transition: all 0.5s;
+}
+.myProject .ch3:hover {
+  transform: translateX(-150%) rotate(5deg);
+}
+.myProject .ch3:hover ~ .ch4 {
+  transform: translateX(-160%);
+}
+/* card */
+
+.myProject .ch4 {
+  transform: translateX(-180%);
+  transition: all 0.5s;
+}
+
+.myProject .ch4:hover {
+  transform: translateX(-210%) rotate(5deg);
+}
+.myProject .ch4:hover ~ .ch5 {
+  transform: translateX(-220%);
+}
+/* card */
+
+.myProject .ch5 {
+  transform: translateX(-240%);
+  transition: all 0.5s;
+}
+.myProject .ch5:hover {
+  transform: translateX(-270%) rotate(5deg);
+}
+.myProject .ch5:hover ~ .ch6 {
+  transform: translateX(-280%);
+}
+/* card */
+
+.myProject .ch6 {
+  transform: translateX(-300%);
+  transition: all 0.5s;
+}
+.myProject .ch6:hover {
+  transform: translateX(-330%) rotate(5deg);
+}
+.myProject .ch6:hover ~ .ch7 {
+  transform: translateX(-340%);
+}
+/* card */
+
+.myProject .ch7 {
+  transform: translateX(-360%);
+  transition: all 0.5s;
+}
+.myProject .ch7:hover {
+  transform: translateX(-390%) rotate(5deg);
+}
+.myProject .ch7:hover ~ .ch8 {
+  transform: translateX(-400%);
+}
+
+/* card */
+
+.myProject .ch8 {
+  transform: translateX(-420%);
+  transition: all 0.5s;
+}
+.myProject .ch8:hover {
+  transform: translateX(-450%) rotate(5deg);
+}
+.myProject .ch8:hover ~ .ch9 {
+  transform: translateX(-1%);
 }
 
 .myProject .card:hover h5 {
